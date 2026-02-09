@@ -1,6 +1,6 @@
 /* CSS BY Gwynn Spragg */
 /* IMPORTED FONTS */
-
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -51,11 +51,90 @@ table {
 	border-spacing: 0;
 }
 /* ROOT VARIABLES */
+:root{
+    --midnight-blue:  #1F2A44;
+    --olive-green:    #76885B;
+    --champagne-gold: #E5C185;
+    --linen:          #F8F4EC;
+    --dark-charcoal:  #2B2B2B;
+    --soft-white:     #FAF9F6;
+}
 
 /* GLOBAL STYLES (mobile first/small) */
+    @media screen and (min-width: 0em) {
+        *{
+            font-family: playfair Display;
+            color: var(--dark-charcoal);
+            text-decoration: none;
+        }
+        h2{
+            color: var(--midnight-blue);
+        }
+        h3{
+            color: var(--soft-white);
+        }
+        #champagne_gold_text{
+            color: var(--champagne-gold);
+        }
+
+        /* header */
+        header{
+            background-color: var(--midnight-blue);
+            text-align: center;
+        }
+        header h1, header figcaption{
+            color: var(--soft-white);
+            background-color: var(--midnight-blue);
+        }
+        header nav{
+            background-color: var(--champagne-gold);
+            color: var(--midnight-blue);
+        }
+        /* main */
+        main{
+            background-color: var(--champagne-gold);
+        }
+        section{
+            background-color: var(--soft-white);
+        }
+
+        div p{
+            color: var(--soft-white);
+        }
+        div{
+            background-color: var(--olive-green);   
+        }
+            /* about us*/
+
+            /* offerings */
+
+            /* Gallery */
+            #gallery a{
+                background-color: var(--olive-green);
+                color: var(--soft-white);
+            }
+
+        /* footer */
+        footer{
+            background-color: var(--midnight-blue);
+        }
+
+        address a{
+            color: var(--soft-white);
+        }
+    }
 
 /* MEDIA QUERY (medium) */
-
+    @media screen and (min-width: 48em) {
+        
+    }
+    
 /* MEDIA QUERY (large) */
+    @media screen and (min-width: 64em) {
+        
+    }
 
 /* MEDIA QUERY (xl) */
+    @media screen and (min-width: 1300px) {
+        
+    }
