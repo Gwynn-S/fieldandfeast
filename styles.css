@@ -67,11 +67,17 @@ table {
             color: var(--dark-charcoal);
             text-decoration: none;
         }
+        h1{
+            font-size:xx-large;
+            font-weight: bolder;
+        }
         h2{
             color: var(--midnight-blue);
+            font-weight: bolder;
         }
         h3{
             color: var(--soft-white);
+            font-weight: bolder;
         }
         #champagne_gold_text{
             color: var(--champagne-gold);
@@ -96,27 +102,46 @@ table {
         }
         section{
             background-color: var(--soft-white);
+            padding: 10px;
+            margin-top: 2px;
         }
 
         div p{
             color: var(--soft-white);
         }
         div{
-            background-color: var(--olive-green);   
+            background-color: var(--olive-green);  
+            border-radius: .5em;
+            padding: 10px; 
         }
             /* about us*/
 
             /* offerings */
 
             /* Gallery */
+            #gallery{
+                border-bottom: 2px solid var(--champagne-gold);
+                margin-bottom: 10px;
+                
+            }
             #gallery a{
                 background-color: var(--olive-green);
                 color: var(--soft-white);
             }
-
+            #gallery figure{
+                background-color: var(--soft-white);
+                border-radius: .5em;
+                text-shadow: 3px var(--dark-charcoal);
+            }
+            img{
+                border-radius: 10px;
+                padding: auto 0;
+            }
         /* footer */
         footer{
             background-color: var(--midnight-blue);
+            padding: 10px;
+            margin-top: 2px;
         }
 
         address a{
