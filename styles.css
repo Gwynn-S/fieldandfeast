@@ -67,39 +67,38 @@ table {
             color: var(--dark-charcoal);
             text-decoration: none;
         }
+
+         h1, h2, h3, p, figcaption, a{
+            font-family: playfair display;
+        } 
+
         h1{
-            font-size:xx-large;
-            font-weight: bolder;
+            font-size:3.5rem;
+            font-weight: 600;
+            margin: 10px 0;
         }
+
         h2{
             color: var(--midnight-blue);
-            font-weight: bolder;
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 20px 10px 10px;
+            
         }
+
         h3{
             color: var(--soft-white);
             font-weight: bolder;
         }
+
         #champagne_gold_text{
             color: var(--champagne-gold);
         }
 
-        /* header */
-        header{
-            background-color: var(--midnight-blue);
-            text-align: center;
-        }
-        header h1, header figcaption{
-            color: var(--soft-white);
-            background-color: var(--midnight-blue);
-        }
-        header nav{
-            background-color: var(--champagne-gold);
-            color: var(--midnight-blue);
-        }
-        /* main */
         main{
             background-color: var(--champagne-gold);
         }
+
         section{
             background-color: var(--soft-white);
             padding: 10px;
@@ -109,34 +108,79 @@ table {
         div p{
             color: var(--soft-white);
         }
+
         div{
             background-color: var(--olive-green);  
             border-radius: .5em;
-            padding: 10px; 
+            padding: 20px; 
+            margin: 10px;
         }
-            /* about us*/
 
+        /* header */
+        header{
+            background-color: var(--midnight-blue);
+            text-align: center;
+        }
+
+        header img{
+            max-width: 13em;
+            max-height: 16em;
+        }
+
+        header h1, header figcaption{
+            color: var(--soft-white);
+            background-color: var(--midnight-blue);
+            padding-bottom: 10px;
+        }
+        
+        figcaption{
+            margin-bottom: 10px;
+        }
+
+        header nav{
+            background-color: var(--champagne-gold);
+            color: var(--midnight-blue);
+            font-size: 22px;
+            font-weight: 800;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        nav a{
+            margin: 12px;
+        }
+
+        /* main */
+
+            /* about us*/
+            #about_us p{
+                text-align: left;
+                margin: 10px;
+                font-size: 1em;
+            }
             /* offerings */
 
             /* Gallery */
             #gallery{
                 border-bottom: 2px solid var(--champagne-gold);
-                margin-bottom: 10px;
-                
+                margin-bottom: 10px;     
             }
+
             #gallery a{
                 background-color: var(--olive-green);
                 color: var(--soft-white);
             }
+
             #gallery figure{
                 background-color: var(--soft-white);
                 border-radius: .5em;
                 text-shadow: 3px var(--dark-charcoal);
             }
+
             img{
                 border-radius: 10px;
                 padding: auto 0;
             }
+
         /* footer */
         footer{
             background-color: var(--midnight-blue);
