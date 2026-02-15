@@ -162,23 +162,38 @@ table {
             /* Gallery */
             #gallery{
                 border-bottom: 2px solid var(--champagne-gold);
-                margin-bottom: 10px;     
+                margin-bottom: 10px;  
+                display: grid;
+            }
+
+            #image_card{
+                background-color: var(--soft-white);
+                border-radius: 0.5em;
+                box-shadow: 1px 3px 5px var(--dark-charcoal);
+                justify-content: center;
+                padding: 0 0 10px 0;
+                margin: 1em 1em 0 1em;
+                text-align: center;
+                font-style: italic;
+            }
+
+            img{
+                border-radius: .5em .5em 0 0;
+                padding: 0;
+                margin-bottom: 10px;
+                width: 100%;
+
             }
 
             #gallery a{
                 background-color: var(--olive-green);
                 color: var(--soft-white);
-            }
-
-            #gallery figure{
-                background-color: var(--soft-white);
-                border-radius: .5em;
-                text-shadow: 3px var(--dark-charcoal);
-            }
-
-            img{
-                border-radius: 10px;
-                padding: auto 0;
+                border-radius: 5px;
+                text-align: center;
+                align-items: center;
+                padding: 8px;
+                margin: 5px;
+                
             }
 
         /* footer */
