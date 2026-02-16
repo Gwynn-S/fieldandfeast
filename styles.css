@@ -93,7 +93,7 @@ table {
             padding-bottom: 5px;
         }
 
-        #champagne_gold_text{
+        .champagne_gold_text{
             color: var(--champagne-gold);
         }
 
@@ -138,6 +138,7 @@ table {
         figcaption{
             margin-bottom: 10px;
             font-size: x-small;
+            font-style: italic;
         }
 
         header nav{
@@ -159,6 +160,7 @@ table {
                 text-align: left;
                 margin: 10px;
                 font-size: 15px;
+                color:var(--dark-charcoal);
             }
             /* offerings */
             #offerings div p{
@@ -173,6 +175,11 @@ table {
                 list-style: disc;
                 color: var(--linen);
                 margin-left: 20px;
+                padding-top: 0;
+                list-style-position: outside;
+            }
+            ul li p{
+                list-style-position: outside;
             }
 
             /* Gallery */
@@ -183,7 +190,7 @@ table {
                 display: grid;
             }
 
-            #image_card{
+            .image_card{
                 background-color: var(--soft-white);
                 border-radius: 0.5em;
                 box-shadow: 1px 3px 5px var(--dark-charcoal);
@@ -256,7 +263,55 @@ table {
 
 /* MEDIA QUERY (medium) */
     @media screen and (min-width: 600px) {
-        
+        /* header */
+        h1{
+            font-size: 60px;
+        }
+        figcaption{
+            font-size: 20px;
+        }
+        header nav a{
+            font-size: 25px;
+        }
+        /* main */
+        h2{
+            font-size: 25px;
+        }
+            /* about */
+
+            /* offerings */
+            #offerings{
+                display: grid;
+                grid-template-areas:
+                "sec_h2 sec_h2" 
+                "provisions experiences"
+                "basket basket";
+                
+            }
+            #offerings h2{
+                grid-area: sec_h2;
+                
+            }
+            #offerings h2, #offerings h3{
+                font-size: 29px; 
+            }
+            /* #provisions, #experiences, #monthly_basket{
+                font-size: 29px;    
+            } */
+            #offerings div p{
+                font-size: 18px;
+            }
+            #provisions{
+                grid-area: provisions;  
+            }
+            #experiences{
+                grid-area: experiences;    
+            }
+            #monthly_basket{
+                grid-area: basket;             
+            }
+            /* gallery */
+        /* footer */
     }
     
 /* MEDIA QUERY (large) */
