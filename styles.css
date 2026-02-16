@@ -190,6 +190,13 @@ table {
                 display: grid;
             }
 
+            #gallery p{
+                text-align: left;
+                margin: 10px;
+                font-size: 15px;
+                color:var(--dark-charcoal);
+            }
+
             .image_card{
                 background-color: var(--soft-white);
                 border-radius: 0.5em;
@@ -218,10 +225,12 @@ table {
                 border-radius: 5px;
                 text-align: center;
                 align-items: center;
-                padding: 10px;
-                margin: 10px 10px;
+                justify-self: center;
+                padding: 10px 0;
+                margin: 10px 20px;
                 font-size: small;
                 font-weight: 300;
+                width: 96%;
             }
 
         /* footer */
@@ -355,7 +364,34 @@ table {
     
 /* MEDIA QUERY (large) */
     @media screen and (min-width: 900px) {
-        
+        #gallery{
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-areas:
+            "title title title"
+            "para para para"
+            "upper_left upper_center upper_right"
+            "lower_left lower_center lower_right"
+            "more more more";
+        }
+        .image_card #tomatoes{
+            grid-area: upper_left; 
+        }
+        .image_card #olive_oil{
+            grid-area: upper_center;
+        }
+        .image_card #table-setting{
+            grid-area: upper_right;
+        }
+        .image_card #chef-plating{
+            grid-area: lower_left;
+        }
+        .image_card #basket{
+            grid-area: lower_center;
+        }
+        #gallery a{
+            margin: 20px 0;
+        }
     }
 
 /* MEDIA QUERY (xl) */
