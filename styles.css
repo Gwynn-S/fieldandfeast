@@ -243,7 +243,7 @@ table {
         }
 
         address a{
-            color: var(--soft-white);
+            color: var(--linen);
             padding-bottom: 0;
         }
         footer nav{
@@ -295,9 +295,7 @@ table {
             #offerings h2, #offerings h3{
                 font-size: 29px; 
             }
-            /* #provisions, #experiences, #monthly_basket{
-                font-size: 29px;    
-            } */
+
             #offerings div p{
                 font-size: 18px;
             }
@@ -311,7 +309,48 @@ table {
                 grid-area: basket;             
             }
             /* gallery */
+            #gallery{
+                display: grid;
+                grid-template-areas:
+                "title title"
+                "para para"
+                "upper_left upper_right"
+                "middle_left middle_right"
+                "lower_left lower_right"
+                "more more";
+            }
+            #gallery figcaption{
+                font-size: 15px;
+                padding: 3px 8px;
+            }
+            #gallery h2{
+                grid-area: title;
+            }
+            #gallery p{
+                grid-area: para;
+            }
+            .image_card #tomatoes{
+               grid-area: upper_left; 
+            }
+            .image_card #olive_oil{
+                grid-area: upper_right;
+            }
+            .image_card #table-setting{
+                grid-area: middle_left;
+            }
+            .image_card #chef-plating{
+                grid-area: middle_right;
+            }
+            .image_card #basket{
+                grid-area: lower_left;
+            }
+            #gallery a{
+                grid-area: more;
+            }
         /* footer */
+        footer{
+            font-size: 13px;
+        }
     }
     
 /* MEDIA QUERY (large) */
